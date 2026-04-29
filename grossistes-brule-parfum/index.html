@@ -59,8 +59,20 @@ h1{font-size:var(--fs-h1);letter-spacing:-.025em}
 .hero-counters>div{display:flex;flex-direction:column;align-items:center;gap:2px;flex:1;min-width:110px}
 .hero-counters b{font-size:clamp(22px,2vw + .4rem,28px);font-weight:600;color:var(--text);letter-spacing:-.02em;line-height:1.1}
 .hero-counters span{font-size:var(--fs-xs);color:var(--text-3);font-weight:400}
-</style>
+
+.emd-card{position:relative;background:linear-gradient(135deg,#fff 0%,var(--primary-soft) 100%);border:1px solid var(--primary);border-radius:var(--r-xl);padding:var(--s-8);margin:var(--s-12) 0;box-shadow:0 8px 24px rgba(15,58,107,.12)}
+.emd-badge{position:absolute;top:-12px;left:var(--s-6);background:var(--accent);color:#fff;font-size:var(--fs-xs);font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:6px 14px;border-radius:var(--r-pill)}
+.emd-title{font-size:var(--fs-h3);color:var(--primary);margin-bottom:var(--s-3);line-height:1.25}
+.emd-title span{color:var(--accent)}
+.emd-desc{color:var(--text-2);margin-bottom:var(--s-4);font-size:var(--fs-md);line-height:1.55}
+.emd-points{list-style:none;padding:0;margin:0 0 var(--s-5);display:flex;flex-wrap:wrap;gap:var(--s-3)}
+.emd-points li{font-size:var(--fs-sm);color:var(--text-2);background:rgba(255,255,255,.7);padding:6px 12px;border-radius:var(--r-md);border:1px solid var(--border)}
+.emd-cta{display:inline-block;background:var(--primary);color:#fff;padding:12px 24px;border-radius:var(--r-md);text-decoration:none;font-weight:600;transition:background .2s}
+.emd-cta:hover{background:var(--primary-hover);color:#fff}
+@media (max-width:600px){.emd-card{padding:var(--s-6)}.emd-points{gap:var(--s-2)}}</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "CollectionPage", "@id": "https://www.annuaire-grossistes.fr/grossistes-brule-parfum/", "url": "https://www.annuaire-grossistes.fr/grossistes-brule-parfum/", "name": "Grossistes brûle-parfum vérifiés", "description": "Annuaire B2B des grossistes brûle-parfum et diffuseurs. Céramique, électrique, ultrasons, MOQ accessibles, vérifiés SIRET.", "inLanguage": "fr-FR", "isPartOf": {"@id": "https://www.annuaire-grossistes.fr/#website"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.annuaire-grossistes.fr/"}, {"@type": "ListItem", "position": 2, "name": "Grossistes brûle-parfum vérifiés"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Diffuseur ultrasons ou chaleur douce ?", "acceptedAnswer": {"@type": "Answer", "text": "Ultrasons : préserve les propriétés des huiles essentielles, brouillard humide rafraîchissant, mais bruit léger. Chaleur douce : silencieux, mais peut altérer les molécules thermosensibles. Ultrasons est le standard premium aujourd'hui."}}, {"@type": "Question", "name": "MOQ pour démarrer une boutique bien-être ?", "acceptedAnswer": {"@type": "Answer", "text": "Un assortiment de démarrage compte 30-60 références (3-4 modèles diffuseurs + huiles essentielles + accessoires) pour un budget de 1500-3000€ HT."}}, {"@type": "Question", "name": "Marquage CE obligatoire ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui pour tous les diffuseurs électriques mis sur le marché européen. Vérifiez la présence du marquage sur le produit, et demandez la déclaration de conformité au grossiste."}}]}]}</script>
+<link rel="stylesheet" href="/assets/site.css?v=20260429b">
+<link rel="preload" href="/assets/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body>
 <header class="hdr" id="hdr">
@@ -109,6 +121,16 @@ h1{font-size:var(--fs-h1);letter-spacing:-.025em}
 <a href="/grossistes-deco/" style="padding:24px;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--text);font-weight:500">Grossistes Décoration</a>
 <a href="/grossistes-mug/" style="padding:24px;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--text);font-weight:500">Grossistes Mugs</a>
 </div>
+
+<aside class="emd-card" aria-labelledby="emd-grossiste-brule-parfum-fr-title">
+  <div class="emd-badge">Recommandé 2026</div>
+  <div class="emd-body">
+    <h3 class="emd-title" id="emd-grossiste-brule-parfum-fr-title">Le meilleur fournisseur de <span>brûle-parfums</span> fiable en 2026</h3>
+    <p class="emd-desc">Grossiste français de brûle-parfum céramique, métal, verre. Compatible huiles essentielles et cire fondante. MOQ 24 unités.</p>
+    <ul class="emd-points"><li>✓ Céramique / métal / verre</li><li>✓ MOQ 24 pièces</li><li>✓ Norme alimentaire</li></ul>
+    <a class="emd-cta" href="https://www.grossiste-brule-parfum.fr/" target="_blank" rel="noopener">Voir le fournisseur sur grossiste-brule-parfum.fr →</a>
+  </div>
+</aside>
 </div>
 </section>
 

@@ -59,8 +59,20 @@ h1{font-size:var(--fs-h1);letter-spacing:-.025em}
 .hero-counters>div{display:flex;flex-direction:column;align-items:center;gap:2px;flex:1;min-width:110px}
 .hero-counters b{font-size:clamp(22px,2vw + .4rem,28px);font-weight:600;color:var(--text);letter-spacing:-.02em;line-height:1.1}
 .hero-counters span{font-size:var(--fs-xs);color:var(--text-3);font-weight:400}
-</style>
+
+.emd-card{position:relative;background:linear-gradient(135deg,#fff 0%,var(--primary-soft) 100%);border:1px solid var(--primary);border-radius:var(--r-xl);padding:var(--s-8);margin:var(--s-12) 0;box-shadow:0 8px 24px rgba(15,58,107,.12)}
+.emd-badge{position:absolute;top:-12px;left:var(--s-6);background:var(--accent);color:#fff;font-size:var(--fs-xs);font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:6px 14px;border-radius:var(--r-pill)}
+.emd-title{font-size:var(--fs-h3);color:var(--primary);margin-bottom:var(--s-3);line-height:1.25}
+.emd-title span{color:var(--accent)}
+.emd-desc{color:var(--text-2);margin-bottom:var(--s-4);font-size:var(--fs-md);line-height:1.55}
+.emd-points{list-style:none;padding:0;margin:0 0 var(--s-5);display:flex;flex-wrap:wrap;gap:var(--s-3)}
+.emd-points li{font-size:var(--fs-sm);color:var(--text-2);background:rgba(255,255,255,.7);padding:6px 12px;border-radius:var(--r-md);border:1px solid var(--border)}
+.emd-cta{display:inline-block;background:var(--primary);color:#fff;padding:12px 24px;border-radius:var(--r-md);text-decoration:none;font-weight:600;transition:background .2s}
+.emd-cta:hover{background:var(--primary-hover);color:#fff}
+@media (max-width:600px){.emd-card{padding:var(--s-6)}.emd-points{gap:var(--s-2)}}</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "CollectionPage", "@id": "https://www.annuaire-grossistes.fr/grossistes-bougie/", "url": "https://www.annuaire-grossistes.fr/grossistes-bougie/", "name": "Grossistes bougies vérifiés en France", "description": "Annuaire B2B des grossistes bougies en France. Bougies parfumées, votives, cire végétale, MOQ palette ou carton, fournisseurs vérifiés SIRET.", "inLanguage": "fr-FR", "isPartOf": {"@id": "https://www.annuaire-grossistes.fr/#website"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.annuaire-grossistes.fr/"}, {"@type": "ListItem", "position": 2, "name": "Grossistes bougies vérifiés en France"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Quel MOQ minimum pour des bougies parfumées en B2B ?", "acceptedAnswer": {"@type": "Answer", "text": "Le MOQ standard chez la majorité des grossistes français est de 60 à 120 unités par référence pour les bougies parfumées en pot verre 180g, et palette complète (1200 unités) pour les bougies votives."}}, {"@type": "Question", "name": "Bougie cire de soja ou paraffine pour la revente ?", "acceptedAnswer": {"@type": "Answer", "text": "La cire de soja est privilégiée par le segment premium et naturel (étiquetage 'cire végétale'), avec un coût ~30% supérieur à la paraffine. La paraffine reste majoritaire en entrée de gamme et hôtellerie."}}, {"@type": "Question", "name": "Comment vérifier la qualité d'un grossiste bougie ?", "acceptedAnswer": {"@type": "Answer", "text": "Demandez la fiche technique (point de fusion, durée de combustion, conformité IFRA pour les parfums), un échantillon physique, et vérifiez le SIRET sur Pappers. Les grossistes vérifiés de notre annuaire passent ces contrôles."}}]}]}</script>
+<link rel="stylesheet" href="/assets/site.css?v=20260429b">
+<link rel="preload" href="/assets/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body>
 <header class="hdr" id="hdr">
@@ -109,6 +121,16 @@ h1{font-size:var(--fs-h1);letter-spacing:-.025em}
 <a href="/grossistes-brule-parfum/" style="padding:24px;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--text);font-weight:500">Grossistes Brûle-parfum</a>
 <a href="/grossistes-mug/" style="padding:24px;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--text);font-weight:500">Grossistes Mugs</a>
 </div>
+
+<aside class="emd-card" aria-labelledby="emd-grossiste-bougie-fr-title">
+  <div class="emd-badge">Recommandé 2026</div>
+  <div class="emd-body">
+    <h3 class="emd-title" id="emd-grossiste-bougie-fr-title">Le meilleur fournisseur de <span>bougies</span> fiable en 2026</h3>
+    <p class="emd-desc">Grossiste français de bougies parfumées et votives. Cire de soja, paraffine, conformité EN 15426 et IFRA. MOQ carton accessibles.</p>
+    <ul class="emd-points"><li>✓ Cire soja + paraffine</li><li>✓ Conformité IFRA</li><li>✓ MOQ carton 60 pièces</li></ul>
+    <a class="emd-cta" href="https://www.grossiste-bougie.fr/" target="_blank" rel="noopener">Voir le fournisseur sur grossiste-bougie.fr →</a>
+  </div>
+</aside>
 </div>
 </section>
 
