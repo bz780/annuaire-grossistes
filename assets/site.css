@@ -305,3 +305,7 @@ p{margin:0}
 /* Utility */
 .text-c{text-align:center}
 .muted{color:var(--text-3)}
+
+/* === Form success message (after submit) === */
+.cf-success{background:linear-gradient(135deg,#e8f5e9 0%,#c8e6c9 100%);border:1px solid #66bb6a;color:#1b5e20;padding:32px 28px;border-radius:var(--r-lg);font-size:var(--fs-md);text-align:center;margin:var(--s-6) 0;line-height:1.6}
+.cf-success strong{display:block;font-size:var(--fs-lg);margin-bottom:6px}
