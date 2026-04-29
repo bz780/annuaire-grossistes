@@ -64,11 +64,305 @@ h1{font-size:var(--fs-h1);letter-spacing:-.025em}
 <link rel="preload" href="/assets/site.css?v=20260429a" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="/assets/site.css?v=20260429a"></noscript>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[
-{"@type":"WebSite","@id":"https://www.annuaire-grossistes.fr/#website","url":"https://www.annuaire-grossistes.fr/","name":"Annuaire-Grossistes.fr","description":"Annuaire B2B sélectif des grossistes français vérifiés","inLanguage":"fr-FR","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.annuaire-grossistes.fr/recherche/?q={search_term_string}"},"query-input":"required name=search_term_string"}},
-{"@type":"Organization","@id":"https://www.annuaire-grossistes.fr/#org","name":"Annuaire-Grossistes.fr","url":"https://www.annuaire-grossistes.fr/","logo":"https://www.annuaire-grossistes.fr/assets/images/logo.svg","description":"Annuaire B2B sélectif des grossistes français vérifiés. Inscription réservée aux acheteurs déclarés (SIRET requis).","address":{"@type":"PostalAddress","addressCountry":"FR"},"areaServed":[{"@type":"Country","name":"France"},{"@type":"Country","name":"Belgique"},{"@type":"Country","name":"Suisse"},{"@type":"Country","name":"Luxembourg"}],"knowsAbout":["B2B Wholesale","Grossiste France","Sourcing fournisseurs","Sirene SIRET"],"contactPoint":{"@type":"ContactPoint","contactType":"customer support","email":"contact@annuaire-grossistes.fr","areaServed":"FR","availableLanguage":"French"}},
-{"@type":"BreadcrumbList","@id":"https://www.annuaire-grossistes.fr/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.annuaire-grossistes.fr/"}]}
-]}
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.annuaire-grossistes.fr/#website",
+      "name": "Annuaire-Grossistes.fr",
+      "url": "https://www.annuaire-grossistes.fr/",
+      "description": "Annuaire B2B sélectif des grossistes français vérifiés.",
+      "publisher": {
+        "@id": "https://www.annuaire-grossistes.fr/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.annuaire-grossistes.fr/categories/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      },
+      "inLanguage": "fr-FR"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.annuaire-grossistes.fr/#organization",
+      "name": "Annuaire-Grossistes.fr",
+      "url": "https://www.annuaire-grossistes.fr/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.annuaire-grossistes.fr/favicon.svg",
+        "width": 64,
+        "height": 64
+      },
+      "description": "Annuaire B2B sélectif des grossistes français vérifiés. Inscription réservée aux acheteurs déclarés (SIRET requis).",
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "France"
+        },
+        {
+          "@type": "Country",
+          "name": "Belgique"
+        },
+        {
+          "@type": "Country",
+          "name": "Suisse"
+        },
+        {
+          "@type": "Country",
+          "name": "Luxembourg"
+        }
+      ],
+      "knowsAbout": [
+        "B2B Wholesale",
+        "Grossistes France",
+        "Sourcing fournisseurs",
+        "Vérification SIRET INSEE",
+        "Annuaire B2B vérifié",
+        "Distribution professionnelle"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "FR"
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "contact@annuaire-grossistes.fr",
+          "areaServed": "FR",
+          "availableLanguage": [
+            "French"
+          ]
+        }
+      ],
+      "foundingDate": "2026",
+      "slogan": "Annuaire B2B vérifié — pros déclarés uniquement"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://www.annuaire-grossistes.fr/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.annuaire-grossistes.fr/#webpage",
+      "url": "https://www.annuaire-grossistes.fr/",
+      "name": "Annuaire-Grossistes.fr — Annuaire B2B vérifié des grossistes français",
+      "description": "Annuaire B2B sélectif des grossistes français. Vérification SIRET obligatoire. Contact direct, sans intermédiaire facturé.",
+      "isPartOf": {
+        "@id": "https://www.annuaire-grossistes.fr/#website"
+      },
+      "about": {
+        "@id": "https://www.annuaire-grossistes.fr/#organization"
+      },
+      "inLanguage": "fr-FR",
+      "datePublished": "2026-04-28",
+      "dateModified": "2026-04-29",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://www.annuaire-grossistes.fr/assets/images/hero-warehouse.webp"
+      },
+      "potentialAction": {
+        "@type": "ReadAction",
+        "target": [
+          "https://www.annuaire-grossistes.fr/"
+        ]
+      }
+    },
+    {
+      "@type": "ItemList",
+      "name": "Catégories de grossistes",
+      "description": "Catégories de grossistes français vérifiés présents dans l'annuaire.",
+      "numberOfItems": 29,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Grossistes Bonnets",
+          "url": "https://www.annuaire-grossistes.fr/grossistes-bonnet/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Grossistes Bougies",
+          "url": "https://www.annuaire-grossistes.fr/grossistes-bougie/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Grossistes Brûle-parfums",
+          "url": "https://www.annuaire-grossistes.fr/grossistes-brule-parfum/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Grossistes Canapés bubble",
+          "url": "https://www.annuaire-grossistes.fr/grossistes-canape-bubble/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Grossistes Cartons",
+          "url": "https://www.annuaire-grossistes.fr/grossistes-carton/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Grossistes Casquettes",
+          "url": "https://www.annuaire-grossistes.fr/grossistes-casquette/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "Grossistes Couches bébé",
+          "url": "https://www.annuaire-grossistes.fr/grossistes-couche/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "name": "Grossistes Coussins",
+          "url": "https://www.annuaire-grossistes.fr/grossistes-coussin/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "name": "Grossistes Cutters",
+          "url": "https://www.annuaire-grossistes.fr/grossistes-cutter/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "name": "Grossistes Décoration",
+          "url": "https://www.annuaire-grossistes.fr/grossistes-deco/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "name": "Grossistes Déco Bali",
+          "url": "https://www.annuaire-grossistes.fr/grossistes-deco-bali/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "name": "Grossistes Décorations de Noël",
+          "url": "https://www.annuaire-grossistes.fr/grossistes-decoration-noel/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 13,
+          "name": "Grossistes Diamond painting",
+          "url": "https://www.annuaire-grossistes.fr/grossistes-diamond-painting/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 14,
+          "name": "Grossistes Distributeurs automatiques",
+          "url": "https://www.annuaire-grossistes.fr/grossistes-distributeur-automatique/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 15,
+          "name": "Grossistes Écharpes",
+          "url": "https://www.annuaire-grossistes.fr/grossistes-echarpe/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 16,
+          "name": "Grossistes Éclairage LED",
+          "url": "https://www.annuaire-grossistes.fr/grossistes-eclairage-led/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 17,
+          "name": "Grossistes Éventails",
+          "url": "https://www.annuaire-grossistes.fr/grossistes-eventail/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 18,
+          "name": "Grossistes Grossistes France",
+          "url": "https://www.annuaire-grossistes.fr/grossistes-france/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 19,
+          "name": "Grossistes Gourdes",
+          "url": "https://www.annuaire-grossistes.fr/grossistes-gourde/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 20,
+          "name": "Grossistes Laine",
+          "url": "https://www.annuaire-grossistes.fr/grossistes-laine/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 21,
+          "name": "Grossistes Lunettes éclipse",
+          "url": "https://www.annuaire-grossistes.fr/grossistes-lunettes-eclipse/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 22,
+          "name": "Grossistes Mugs",
+          "url": "https://www.annuaire-grossistes.fr/grossistes-mug/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 23,
+          "name": "Grossistes Nappes",
+          "url": "https://www.annuaire-grossistes.fr/grossistes-nappe/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 24,
+          "name": "Grossistes Panneaux solaires",
+          "url": "https://www.annuaire-grossistes.fr/grossistes-panneau-solaire/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 25,
+          "name": "Grossistes Parapluies",
+          "url": "https://www.annuaire-grossistes.fr/grossistes-parapluie/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 26,
+          "name": "Grossistes Pyjamas",
+          "url": "https://www.annuaire-grossistes.fr/grossistes-pyjama/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 27,
+          "name": "Grossistes Robes",
+          "url": "https://www.annuaire-grossistes.fr/grossistes-robe/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 28,
+          "name": "Grossistes Vaisselle",
+          "url": "https://www.annuaire-grossistes.fr/grossistes-vaisselle/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 29,
+          "name": "Grossistes Valises",
+          "url": "https://www.annuaire-grossistes.fr/grossistes-valise/"
+        }
+      ]
+    }
+  ]
+}
 </script>
 </head>
 <body>

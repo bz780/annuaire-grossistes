@@ -70,9 +70,246 @@ h1{font-size:var(--fs-h1);letter-spacing:-.025em}
 .emd-cta{display:inline-block;background:var(--primary);color:#fff;padding:12px 24px;border-radius:var(--r-md);text-decoration:none;font-weight:600;transition:background .2s}
 .emd-cta:hover{background:var(--primary-hover);color:#fff}
 @media (max-width:600px){.emd-card{padding:var(--s-6)}.emd-points{gap:var(--s-2)}}</style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "CollectionPage", "@id": "https://www.annuaire-grossistes.fr/grossistes-carton/", "url": "https://www.annuaire-grossistes.fr/grossistes-carton/", "name": "Grossistes cartons et emballages vérifiés", "description": "Annuaire B2B des grossistes cartons. Caisses américaines, sacs kraft, double cannelure, MOQ palette, vérifiés SIRET.", "inLanguage": "fr-FR", "isPartOf": {"@id": "https://www.annuaire-grossistes.fr/#website"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.annuaire-grossistes.fr/"}, {"@type": "ListItem", "position": 2, "name": "Grossistes cartons et emballages vérifiés"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Carton simple ou double cannelure pour l'e-commerce ?", "acceptedAnswer": {"@type": "Answer", "text": "Pour des produits ≤5 kg sur transport national, simple cannelure suffit. Pour ≥5 kg ou international, passez en double cannelure : la différence de prix (15-25%) est largement compensée par la baisse des litiges casse."}}, {"@type": "Question", "name": "Cartons FSC ou PEFC ?", "acceptedAnswer": {"@type": "Answer", "text": "Les deux certifications attestent d'une gestion forestière durable, FSC étant la plus reconnue à l'international. Pour vendre en marketplace (Amazon, Cdiscount), une certification est désormais quasi-obligatoire pour les marques propres."}}, {"@type": "Question", "name": "Stock minimum à constituer ?", "acceptedAnswer": {"@type": "Answer", "text": "Comptez 4-8 semaines de consommation pour absorber les pics de volume sans rupture. Les grossistes livrent généralement en 48-72h pour les cartons standard."}}]}]}</script>
+
 <link rel="stylesheet" href="/assets/site.css?v=20260429b">
 <link rel="preload" href="/assets/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.annuaire-grossistes.fr/#website",
+      "name": "Annuaire-Grossistes.fr",
+      "url": "https://www.annuaire-grossistes.fr/",
+      "description": "Annuaire B2B sélectif des grossistes français vérifiés.",
+      "publisher": {
+        "@id": "https://www.annuaire-grossistes.fr/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.annuaire-grossistes.fr/categories/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      },
+      "inLanguage": "fr-FR"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.annuaire-grossistes.fr/#organization",
+      "name": "Annuaire-Grossistes.fr",
+      "url": "https://www.annuaire-grossistes.fr/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.annuaire-grossistes.fr/favicon.svg",
+        "width": 64,
+        "height": 64
+      },
+      "description": "Annuaire B2B sélectif des grossistes français vérifiés. Inscription réservée aux acheteurs déclarés (SIRET requis).",
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "France"
+        },
+        {
+          "@type": "Country",
+          "name": "Belgique"
+        },
+        {
+          "@type": "Country",
+          "name": "Suisse"
+        },
+        {
+          "@type": "Country",
+          "name": "Luxembourg"
+        }
+      ],
+      "knowsAbout": [
+        "B2B Wholesale",
+        "Grossistes France",
+        "Sourcing fournisseurs",
+        "Vérification SIRET INSEE",
+        "Annuaire B2B vérifié",
+        "Distribution professionnelle"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "FR"
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "contact@annuaire-grossistes.fr",
+          "areaServed": "FR",
+          "availableLanguage": [
+            "French"
+          ]
+        }
+      ],
+      "foundingDate": "2026",
+      "slogan": "Annuaire B2B vérifié — pros déclarés uniquement"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://www.annuaire-grossistes.fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Catégories",
+          "item": "https://www.annuaire-grossistes.fr/categories/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Grossistes Cartons",
+          "item": "https://www.annuaire-grossistes.fr/grossistes-carton/"
+        }
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://www.annuaire-grossistes.fr/grossistes-carton/#webpage",
+      "url": "https://www.annuaire-grossistes.fr/grossistes-carton/",
+      "name": "Grossistes Cartons — Annuaire B2B vérifié",
+      "description": "Annuaire des grossistes de cartons en France. Fournisseurs B2B vérifiés SIRET, contact direct, conditions transparentes.",
+      "isPartOf": {
+        "@id": "https://www.annuaire-grossistes.fr/#website"
+      },
+      "inLanguage": "fr-FR",
+      "datePublished": "2026-04-28",
+      "dateModified": "2026-04-29",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Accueil",
+            "item": "https://www.annuaire-grossistes.fr/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Catégories",
+            "item": "https://www.annuaire-grossistes.fr/categories/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Grossistes Cartons",
+            "item": "https://www.annuaire-grossistes.fr/grossistes-carton/"
+          }
+        ]
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "grossiste cartons emballage"
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "Grossistes vérifiés en cartons",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "Organization",
+              "name": "Sélection 2026 — fournisseur de cartons",
+              "url": "https://www.grossiste-carton.fr/",
+              "areaServed": {
+                "@type": "Country",
+                "name": "France"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Service",
+      "name": "Annuaire des grossistes en cartons",
+      "serviceType": "Annuaire B2B grossistes de cartons",
+      "provider": {
+        "@id": "https://www.annuaire-grossistes.fr/#organization"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "France"
+        },
+        {
+          "@type": "Country",
+          "name": "Belgique"
+        },
+        {
+          "@type": "Country",
+          "name": "Suisse"
+        }
+      ],
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Professionnels déclarés (SIRET)"
+      },
+      "category": "grossiste cartons emballage"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Comment trouver un grossiste de cartons fiable en France ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sur Annuaire-Grossistes.fr, les fournisseurs de cartons sont vérifiés via leur SIRET (base INSEE/Sirene). Vous pouvez les contacter directement, sans intermédiaire facturé. Inscription réservée aux acheteurs professionnels déclarés."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quelle quantité minimum de commande chez un grossiste de cartons ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le MOQ (Minimum Order Quantity) varie selon le grossiste, le format produit et l'usage. La plupart des grossistes français de cartons acceptent des commandes à partir d'un carton ou d'un palette d'échantillonnage. Renseignez-vous directement auprès de chaque fournisseur."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Faut-il un SIRET pour acheter en gros chez un grossiste de cartons ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Les grossistes français vendent uniquement à des professionnels déclarés (SIRET et TVA intracommunautaire valides). C'est une obligation légale et fiscale liée aux ventes en gros."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quels critères pour choisir un grossiste de cartons ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Vérifiez : ancienneté de la société, certifications (CE, normes), conditions de livraison, MOQ, garantie, SAV, réactivité commerciale. Annuaire-Grossistes.fr ne liste que les fournisseurs avec un SIRET actif et déclaré."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quel est le prix moyen chez un grossiste de cartons ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Les tarifs grossistes dépendent du volume commandé, du format et des certifications du produit. Demandez plusieurs devis comparatifs aux fournisseurs listés pour obtenir un benchmark précis."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <header class="hdr" id="hdr">

@@ -78,9 +78,246 @@ h2{font-size:var(--fs-h2);letter-spacing:-.02em}
 .emd-cta{display:inline-block;background:var(--primary);color:#fff;padding:12px 24px;border-radius:var(--r-md);text-decoration:none;font-weight:600;transition:background .2s}
 .emd-cta:hover{background:var(--primary-hover);color:#fff}
 @media (max-width:600px){.emd-card{padding:var(--s-6)}.emd-points{gap:var(--s-2)}}</style>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://www.annuaire-grossistes.fr/grossistes-decoration-noel/","url":"https://www.annuaire-grossistes.fr/grossistes-decoration-noel/","name":"Annuaire des grossistes en décorations de Noël","description":"Annuaire B2B des grossistes français en décorations de Noël. Boules, guirlandes, sapins, MOQ carton, fournisseurs vérifiés SIRET.","inLanguage":"fr-FR","isPartOf":{"@id":"https://www.annuaire-grossistes.fr/#website"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.annuaire-grossistes.fr/"},{"@type":"ListItem","position":2,"name":"Annuaire des grossistes en décorations de Noël"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quand commander ses décorations de Noël chez un grossiste ?","acceptedAnswer":{"@type":"Answer","text":"Idéalement entre mai et juillet pour une livraison fin août / début septembre. Passé août, les fournisseurs sont en rupture sur 30 à 50% du catalogue, surtout sur les nouveautés et les références best-sellers."}},{"@type":"Question","name":"Quelle marge moyenne en revente déco de Noël ?","acceptedAnswer":{"@type":"Answer","text":"La marge brute revente est de 2,2 à 2,8 (coefficient appliqué au prix grossiste HT). En boutique physique, le rotation est rapide entre fin novembre et le 24 décembre — anticipez les soldes post-Noël à -50% pour écouler le stock."}},{"@type":"Question","name":"Guirlandes LED extérieur : quelle norme exiger ?","acceptedAnswer":{"@type":"Answer","text":"IP44 minimum pour balcon couvert, IP65 pour pose pleine pluie. Norme CE obligatoire avec marquage sur emballage et notice. Demandez le rapport de test EN 60598 au fournisseur — un grossiste sérieux le fournit sans détour."}},{"@type":"Question","name":"Sapin artificiel : différence PE vs PVC ?","acceptedAnswer":{"@type":"Answer","text":"Le PE (polyéthylène) imite mieux les aiguilles naturelles avec un effet 3D, mais coûte 2x plus cher que le PVC. Mix PE/PVC : compromis qualité/prix, branches extérieures en PE, intérieures en PVC."}}]},{"@type":"Service","name":"Annuaire des grossistes en décorations de Noël","provider":{"@type":"Organization","name":"grossiste-decorations-noel.fr","url":"https://www.grossiste-decorations-noel.fr/"},"areaServed":"FR"}]}</script>
+
 <link rel="stylesheet" href="/assets/site.css?v=20260429b">
 <link rel="preload" href="/assets/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.annuaire-grossistes.fr/#website",
+      "name": "Annuaire-Grossistes.fr",
+      "url": "https://www.annuaire-grossistes.fr/",
+      "description": "Annuaire B2B sélectif des grossistes français vérifiés.",
+      "publisher": {
+        "@id": "https://www.annuaire-grossistes.fr/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.annuaire-grossistes.fr/categories/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      },
+      "inLanguage": "fr-FR"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.annuaire-grossistes.fr/#organization",
+      "name": "Annuaire-Grossistes.fr",
+      "url": "https://www.annuaire-grossistes.fr/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.annuaire-grossistes.fr/favicon.svg",
+        "width": 64,
+        "height": 64
+      },
+      "description": "Annuaire B2B sélectif des grossistes français vérifiés. Inscription réservée aux acheteurs déclarés (SIRET requis).",
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "France"
+        },
+        {
+          "@type": "Country",
+          "name": "Belgique"
+        },
+        {
+          "@type": "Country",
+          "name": "Suisse"
+        },
+        {
+          "@type": "Country",
+          "name": "Luxembourg"
+        }
+      ],
+      "knowsAbout": [
+        "B2B Wholesale",
+        "Grossistes France",
+        "Sourcing fournisseurs",
+        "Vérification SIRET INSEE",
+        "Annuaire B2B vérifié",
+        "Distribution professionnelle"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "FR"
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "contact@annuaire-grossistes.fr",
+          "areaServed": "FR",
+          "availableLanguage": [
+            "French"
+          ]
+        }
+      ],
+      "foundingDate": "2026",
+      "slogan": "Annuaire B2B vérifié — pros déclarés uniquement"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://www.annuaire-grossistes.fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Catégories",
+          "item": "https://www.annuaire-grossistes.fr/categories/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Grossistes Décorations de Noël",
+          "item": "https://www.annuaire-grossistes.fr/grossistes-decoration-noel/"
+        }
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://www.annuaire-grossistes.fr/grossistes-decoration-noel/#webpage",
+      "url": "https://www.annuaire-grossistes.fr/grossistes-decoration-noel/",
+      "name": "Grossistes Décorations de Noël — Annuaire B2B vérifié",
+      "description": "Annuaire des grossistes de décorations de noël en France. Fournisseurs B2B vérifiés SIRET, contact direct, conditions transparentes.",
+      "isPartOf": {
+        "@id": "https://www.annuaire-grossistes.fr/#website"
+      },
+      "inLanguage": "fr-FR",
+      "datePublished": "2026-04-28",
+      "dateModified": "2026-04-29",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Accueil",
+            "item": "https://www.annuaire-grossistes.fr/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Catégories",
+            "item": "https://www.annuaire-grossistes.fr/categories/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Grossistes Décorations de Noël",
+            "item": "https://www.annuaire-grossistes.fr/grossistes-decoration-noel/"
+          }
+        ]
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "grossiste décorations Noël"
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "Grossistes vérifiés en décorations de noël",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "Organization",
+              "name": "Sélection 2026 — fournisseur de décorations de noël",
+              "url": "https://www.grossiste-decorations-noel.fr/",
+              "areaServed": {
+                "@type": "Country",
+                "name": "France"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Service",
+      "name": "Annuaire des grossistes en décorations de noël",
+      "serviceType": "Annuaire B2B grossistes de décorations de noël",
+      "provider": {
+        "@id": "https://www.annuaire-grossistes.fr/#organization"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "France"
+        },
+        {
+          "@type": "Country",
+          "name": "Belgique"
+        },
+        {
+          "@type": "Country",
+          "name": "Suisse"
+        }
+      ],
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Professionnels déclarés (SIRET)"
+      },
+      "category": "grossiste décorations Noël"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Comment trouver un grossiste de décorations de noël fiable en France ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sur Annuaire-Grossistes.fr, les fournisseurs de décorations de noël sont vérifiés via leur SIRET (base INSEE/Sirene). Vous pouvez les contacter directement, sans intermédiaire facturé. Inscription réservée aux acheteurs professionnels déclarés."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quelle quantité minimum de commande chez un grossiste de décorations de noël ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le MOQ (Minimum Order Quantity) varie selon le grossiste, le format produit et l'usage. La plupart des grossistes français de décorations de noël acceptent des commandes à partir d'un carton ou d'un palette d'échantillonnage. Renseignez-vous directement auprès de chaque fournisseur."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Faut-il un SIRET pour acheter en gros chez un grossiste de décorations de noël ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Les grossistes français vendent uniquement à des professionnels déclarés (SIRET et TVA intracommunautaire valides). C'est une obligation légale et fiscale liée aux ventes en gros."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quels critères pour choisir un grossiste de décorations de noël ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Vérifiez : ancienneté de la société, certifications (CE, normes), conditions de livraison, MOQ, garantie, SAV, réactivité commerciale. Annuaire-Grossistes.fr ne liste que les fournisseurs avec un SIRET actif et déclaré."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quel est le prix moyen chez un grossiste de décorations de noël ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Les tarifs grossistes dépendent du volume commandé, du format et des certifications du produit. Demandez plusieurs devis comparatifs aux fournisseurs listés pour obtenir un benchmark précis."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <header class="hdr" id="hdr">
