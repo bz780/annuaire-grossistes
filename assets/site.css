@@ -309,3 +309,23 @@ p{margin:0}
 /* === Form success message (after submit) === */
 .cf-success{background:linear-gradient(135deg,#e8f5e9 0%,#c8e6c9 100%);border:1px solid #66bb6a;color:#1b5e20;padding:32px 28px;border-radius:var(--r-lg);font-size:var(--fs-md);text-align:center;margin:var(--s-6) 0;line-height:1.6}
 .cf-success strong{display:block;font-size:var(--fs-lg);margin-bottom:6px}
+
+/* === Sidebar pages catégorie === */
+.cat-main{min-width:0}
+.cat-sidebar{display:flex;flex-direction:column;gap:var(--s-5);position:sticky;top:80px;align-self:start}
+.side-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-xl);padding:var(--s-6)}
+.side-card.side-trust{background:var(--primary-soft);border-color:var(--primary-tint)}
+.side-h{font-size:var(--fs-md);margin:0 0 var(--s-3);color:var(--text);font-weight:600;line-height:1.3}
+.side-p{font-size:var(--fs-sm);color:var(--text-2);margin:0 0 var(--s-4);line-height:1.5}
+.side-btn{display:inline-block;background:var(--primary);color:#fff;padding:8px 18px;border-radius:var(--r-md);text-decoration:none;font-size:var(--fs-sm);font-weight:500;transition:background .15s}
+.side-btn:hover{background:var(--primary-hover);color:#fff}
+.side-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:4px}
+.side-list a{color:var(--text-2);text-decoration:none;font-size:var(--fs-sm);padding:4px 0;display:block}
+.side-list a:hover{color:var(--primary)}
+.side-list .side-link-all{font-weight:500;color:var(--primary);margin-top:6px;border-top:1px solid var(--border);padding-top:10px}
+.side-bullets{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.side-bullets li{font-size:var(--fs-sm);color:var(--text-2);padding-left:22px;position:relative;line-height:1.5}
+.side-bullets li::before{content:"✓";position:absolute;left:0;color:var(--success);font-weight:700}
+@media (max-width:1000px){
+  .cat-sidebar{position:static;display:none}
+}
