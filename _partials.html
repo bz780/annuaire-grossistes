@@ -1,0 +1,95 @@
+<!-- Shared partials — pas servi en prod, utilisé pour copy-paste/build -->
+
+<!-- HEADER -->
+<header class="hdr" id="hdr">
+  <div class="container hdr-inner">
+    <a href="/" class="hdr-brand" aria-label="Annuaire Grossistes — accueil">
+      <span class="mark" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+          <rect x="2" y="2" width="20" height="20" rx="4" fill="currentColor"/>
+          <path d="M7 17V9l5-3 5 3v8" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M10 17v-4h4v4" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span class="hdr-brand-name"><b>Annuaire</b><span>-Grossistes.fr</span></span>
+    </a>
+    <nav class="hdr-nav">
+      <a href="/categories/">Catégories</a>
+      <a href="/comment-ca-marche/">Comment ça marche</a>
+      <a href="/devenir-grossiste/">Devenir membre</a>
+      <a href="/glossaire/incoterms/">Glossaire</a>
+      <a href="/a-propos/">À propos</a>
+    </nav>
+    <div class="hdr-spacer"></div>
+    <div class="hdr-actions">
+      <a href="/contact/" class="btn btn-secondary btn-md">Contact</a>
+      <a href="/devenir-grossiste/" class="btn btn-primary btn-md">Inscrire mon entreprise</a>
+    </div>
+  </div>
+</header>
+
+<!-- FOOTER -->
+<footer class="ftr">
+  <div class="container">
+    <div class="ftr-cols">
+      <div class="ftr-brand">
+        <a href="/" class="hdr-brand">
+          <span class="mark"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="4" fill="currentColor"/><path d="M7 17V9l5-3 5 3v8" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 17v-4h4v4" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="hdr-brand-name"><b>Annuaire</b><span>-Grossistes.fr</span></span>
+        </a>
+        <p class="ftr-tag">Annuaire B2B sélectif des grossistes français vérifiés. Inscription réservée aux acheteurs déclarés (SIRET requis).</p>
+      </div>
+      <div class="ftr-col">
+        <h4>Catégories</h4>
+        <ul>
+          <li><a href="/grossistes-bougie/">Bougies</a></li>
+          <li><a href="/grossistes-vaisselle/">Vaisselle</a></li>
+          <li><a href="/grossistes-deco/">Décoration</a></li>
+          <li><a href="/grossistes-casquette/">Casquettes</a></li>
+          <li><a href="/grossistes-laine/">Laine</a></li>
+          <li><a href="/grossistes-mug/">Mugs</a></li>
+          <li><a href="/grossistes-carton/">Cartons</a></li>
+          <li><a href="/categories/">Toutes les catégories</a></li>
+        </ul>
+      </div>
+      <div class="ftr-col">
+        <h4>Ressources</h4>
+        <ul>
+          <li><a href="/comment-ca-marche/">Comment ça marche</a></li>
+          <li><a href="/devenir-grossiste/">Inscrire mon entreprise</a></li>
+          <li><a href="/glossaire/incoterms/">Glossaire incoterms</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/sitemap.xml">Plan du site</a></li>
+        </ul>
+      </div>
+      <div class="ftr-col">
+        <h4>Légal</h4>
+        <ul>
+          <li><a href="/mentions-legales/">Mentions légales</a></li>
+          <li><a href="/cgu/">CGU</a></li>
+          <li><a href="/politique-confidentialite/">Confidentialité</a></li>
+          <li><a href="/contact/">Contact pro</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr-bottom">
+      <span>© 2026 Annuaire-Grossistes.fr — Tous droits réservés</span>
+      <div class="ftr-bottom-links">
+        <a href="/mentions-legales/">Mentions légales</a>
+        <a href="/cgu/">CGU</a>
+        <a href="/politique-confidentialite/">Confidentialité</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Sticky header shadow on scroll
+(function(){
+  var h=document.getElementById('hdr');
+  if(!h) return;
+  var on=function(){h.classList.toggle('hdr-scrolled',window.scrollY>10)};
+  window.addEventListener('scroll',on,{passive:true});
+  on();
+})();
+</script>
