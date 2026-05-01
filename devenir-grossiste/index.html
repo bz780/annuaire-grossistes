@@ -193,6 +193,9 @@ h1{font-size:var(--fs-h1);letter-spacing:-.025em}
   <input type="hidden" name="_subject" value="Inscription grossiste - Annuaire-Grossistes.fr">
   <input type="hidden" name="_captcha" value="false">
   <input type="text" name="_honeypot" style="display:none" tabindex="-1" autocomplete="off">
+  <input type="hidden" name="ts_load" value="">
+  <input type="hidden" name="ts_token" value="">
+  <input type="hidden" name="ts_elapsed" value="">
   <div class="contact-foot">
     <span class="contact-legal">En envoyant, vous acceptez notre <a href="/politique-confidentialite/">politique de confidentialité</a>. Vérification SIRET sous 5 jours ouvrés.</span>
     <button class="btn btn-primary btn-lg" type="submit">Envoyer ma candidature</button>
@@ -226,7 +229,7 @@ h1{font-size:var(--fs-h1);letter-spacing:-.025em}
 var h=document.getElementById('hdr');
 if(h){var on=function(){h.classList.toggle('hdr-scrolled',window.scrollY>10)};window.addEventListener('scroll',on,{passive:true});on()}
 var f=document.getElementById('contact-form');
-if(f){f.addEventListener('submit',function(e){e.preventDefault();var btn=f.querySelector('button[type=submit]');if(btn.disabled)return;btn.disabled=true;var bt=btn.textContent;btn.textContent='Envoi en cours…';var s=document.getElementById('cf-status');s.textContent='Envoi…';fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}}).then(function(r){return r.json()}).then(function(d){if(d.success){f.style.display='none';s.innerHTML='<strong>✓ Message bien reçu.</strong><br>Notre équipe vous répond sous 24h ouvrées.';s.className='cf-success';}else{s.textContent='Erreur. Vérifiez vos champs et réessayez.';btn.disabled=false;btn.textContent=bt}}).catch(function(){s.textContent='Erreur réseau. Réessayez plus tard.';btn.disabled=false;btn.textContent=bt})})}
+if(f){var TS_LOAD=Date.now();var tsl=f.querySelector('[name=ts_load]');if(tsl)tsl.value=String(TS_LOAD);var tst=f.querySelector('[name=ts_token]');if(tst){try{tst.value=btoa(location.href+'|'+TS_LOAD).slice(0,24)}catch(_){tst.value=String(TS_LOAD%9973)}}f.addEventListener('submit',function(e){e.preventDefault();var btn=f.querySelector('button[type=submit]');if(btn.disabled)return;var s=document.getElementById('cf-status');var hp=f.querySelector('[name=_honeypot]');if(hp&&hp.value){return}var elapsed=Date.now()-TS_LOAD;var els=f.querySelector('[name=ts_elapsed]');if(els)els.value=String(elapsed);if(elapsed<2000){s.textContent='Veuillez prendre quelques secondes pour remplir le formulaire.';return}var ua=(navigator.userAgent||'').toLowerCase();if(/curl|wget|python-requests|headlesschrome|phantomjs/.test(ua)){s.textContent='Erreur. Réessayez depuis un navigateur standard.';return}btn.disabled=true;var bt=btn.textContent;btn.textContent='Envoi en cours…';btn.style.opacity='0.7';btn.style.cursor='wait';s.textContent='Envoi…';fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}}).then(function(r){return r.json()}).then(function(d){if(d.success){f.style.display='none';s.innerHTML='<strong>✓ Message bien reçu.</strong><br>Notre équipe vous répond sous 24h ouvrées.';s.className='cf-success';}else{s.textContent='Erreur. Vérifiez vos champs et réessayez.';btn.disabled=false;btn.textContent=bt;btn.style.opacity='';btn.style.cursor=''}}).catch(function(){s.textContent='Erreur réseau. Réessayez plus tard.';btn.disabled=false;btn.textContent=bt;btn.style.opacity='';btn.style.cursor=''})})}
 })();
 </script>
 </body>
